@@ -4,7 +4,7 @@ const Form = () => (
     <form>
       <input type="text" placeholder="Book title" />
       <select>
-        <option value="categories">Categories</option>
+        <option value="author">Author</option>
       </select>
       <button type="submit">Add Book</button>
     </form>
