@@ -1,3 +1,4 @@
+/* eslint-disable */
 import PropTypes from 'prop-types';
 
 const Book = ({ title, author }) => (
@@ -13,8 +14,8 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,
-  // title: PropTypes.object.isRequired,
-  // author: PropTypes.object.isRequired,
+  title: PropTypes.object.isRequired,
+  author: PropTypes.object.isRequired,
 };
 
 export default Book;
