@@ -1,3 +1,5 @@
+import React from "react";
+
 const Form = () => (
   <div className="form-container">
     <h2>Add new book</h2>
