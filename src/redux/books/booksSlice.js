@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   value: [],
 };
 
-export const booksSlice = createSlice({
-  name: "books",
+const booksSlice = createSlice({
+  name: 'books',
   initialState,
   reducers: {
     add: (state, action) => {
@@ -19,7 +19,4 @@ export const booksSlice = createSlice({
   },
 });
 
-// // Action creators are generated for each case reducer function
-// export const { increment, decrement, incrementByAmount } = booksSlice.actions;
-
-// export default counterSlice.reducer;
+export default booksSlice;
