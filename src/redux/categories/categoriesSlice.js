@@ -11,5 +11,5 @@ const categoriesSlice = createSlice({
     check: (state) => state.value,
   },
 });
-
+export const { check} = categoriesSlice.actions;
 export default categoriesSlice;
