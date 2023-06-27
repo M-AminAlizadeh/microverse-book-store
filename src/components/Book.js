@@ -1,5 +1,6 @@
 /* eslint-disable */
 import PropTypes from 'prop-types';
+import React from "react";
 
 const Book = ({ title, author }) => (
   <div className="book-container">

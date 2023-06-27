@@ -62,7 +62,7 @@ react app
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://m-aminalizadeh.github.io/microverse-book-store/)
 
 <!-- GETTING STARTED -->
 
