@@ -14,7 +14,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
