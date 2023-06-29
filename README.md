@@ -7,7 +7,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -15,7 +14,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -53,16 +52,14 @@ react app
 
 ### Key Features <a name="key-features"></a>
 
-- **[Just initial Config]**
-- **[Responsive]**
+- **Just initial Config**
+- **Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://m-aminalizadeh.github.io/microverse-book-store/)
 
 <!-- GETTING STARTED -->
 
@@ -116,9 +113,9 @@ To run tests, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-👤 **Author2**
+👤 **M-Amin Alizadeh**
 
 - GitHub: [@githubhandle](https://github.com/M-AminAlizadeh)
 - Twitter: [@twitterhandle](https://twitter.com/AMINALI69393891)
