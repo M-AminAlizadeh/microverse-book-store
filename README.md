@@ -164,4 +164,4 @@ I would like to acknowledge the Microverse to give me this opportunity.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENCE) licensed.
+This project is [MIT](./LICENSE) licensed.
