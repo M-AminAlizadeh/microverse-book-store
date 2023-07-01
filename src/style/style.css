@@ -39,13 +39,13 @@ nav {
   font-size: 14px;
   padding: 1rem;
 }
+
 /* Books */
 .books-container {
   width: 80%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .book-container {
@@ -58,7 +58,6 @@ nav {
 }
 
 .book-right-side {
-  gap: 0.3rem;
   display: flex;
   flex-direction: column;
 }
@@ -67,11 +66,13 @@ nav {
   font-weight: bold;
   color: #828282;
 }
+
 .book-title {
   font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
 }
+
 .book-author {
   color: var(--primary-color);
   text-transform: capitalize;
@@ -91,7 +92,6 @@ nav {
 .book-left-side {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
 }
 
 /* Form */
