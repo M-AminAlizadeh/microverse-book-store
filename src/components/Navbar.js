@@ -18,7 +18,7 @@ const Navbar = () => (
         </li>
       </ul>
     </div>
-    <img src="https://img.icons8.com/ios-glyphs/40/person-male.png" alt="person-male" />
+    <img src="https://img.icons8.com/ios-glyphs/30/0290ff/person-male.png" alt="person-male" />
   </nav>
 );
 

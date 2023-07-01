@@ -28,7 +28,7 @@ const Book = ({
       </div>
       <div className="book-middle-part">
         <img
-          src="https://img.icons8.com/color/58/loading-sign.png"
+          src="https://img.icons8.com/color/58/0290ff/loading-sign.png"
           alt="loading-sign"
         />
         <div>
