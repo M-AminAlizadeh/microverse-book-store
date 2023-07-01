@@ -17,7 +17,7 @@ const UniqueId = () => {
   } else {
     AppID = localStorage.getItem("AppID");
   }
-  return AppID;
+  // return AppID;
 };
 
 export default UniqueId;
