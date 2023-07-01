@@ -5,8 +5,8 @@ import UniqueId from '../components/UniqueId';
 
 const Home = () => (
   <div className="home-page-container">
-    <Form />
     <Books />
+    <Form />
     <UniqueId />
   </div>
 );
