@@ -1,37 +1,51 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { add } from '../redux/books/booksSlice';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addBook } from "../redux/books/booksSlice";
+import { fetchBooks } from "../redux/books/booksSlice";
 
 const Form = () => {
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
   const dispatch = useDispatch();
+
   const handleClickAddBtn = (e) => {
     e.preventDefault();
-    dispatch(add({ title, author }));
-    // reset form
-    setTitle('');
-    setAuthor('');
+
+    // Dispatch the addBook action to update the local state
+    dispatch(
+      addBook({
+        item_id: `item${Math.floor(Math.random() * 10000)}`,
+        title,
+        author,
+        category: "Fiction",
+      })
+    );
+
+    // Dispatch the fetchBooks action to update the API with the new book
+    dispatch(fetchBooks());
+
+    // Reset form
+    setTitle("");
+    setAuthor("");
   };
+
   return (
-    <div className="form-container">
+    <div className='form-container'>
       <h2>Add new book</h2>
       <form>
         <input
-          type="text"
-          placeholder="Book title"
+          type='text'
+          placeholder='Book title'
           value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          type="text"
-          placeholder="Author"
+          type='text'
+          placeholder='Author'
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit" onClick={(e) => handleClickAddBtn(e)}>
+        <button type='submit' onClick={handleClickAddBtn}>
           Add Book
         </button>
       </form>
