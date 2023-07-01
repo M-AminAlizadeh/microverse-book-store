@@ -16,27 +16,19 @@ const Books = () => {
     return <div>Loading...</div>;
   }
 
-  const bookComponents = [];
-
-  // Iterate over the keys of the books object using Object.keys()
-  Object.keys(books).forEach((itemId) => {
-    const bookArray = books[itemId];
-
-    // Iterate over the bookArray using array iteration methods
-    bookArray.forEach((book) => {
-      bookComponents.push(
+  return (
+    <div>
+      {Object.entries(books).map(([key, bookItems]) => bookItems.map((book) => (
         <Book
-          key={book.item_id}
-          id={book.item_id}
+          key={key}
+          id={key}
           title={book.title}
           author={book.author}
           category={book.category}
-        />,
-      );
-    });
-  });
-
-  return <div>{bookComponents}</div>;
+        />
+      )))}
+    </div>
+  );
 };
 
 export default Books;
