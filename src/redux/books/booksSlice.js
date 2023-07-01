@@ -85,13 +85,11 @@ const booksSlice = createSlice({
       })
       .addCase(addBook.fulfilled, (state, action) => {
         state.loading = false;
-        const newItem = action.payload;
-        state.books[newItem.item_id] = [
-          {
-            item_id: newItem.item_id,
-            title: newItem.title,
-            author: newItem.author,
-            category: newItem.category,
+       return[... {
+            item_id: action.payload.item_id,
+            title: action.payload.title,
+            author: action.payload.author,
+            category: action.payload.category,
           },
         ];
       })
