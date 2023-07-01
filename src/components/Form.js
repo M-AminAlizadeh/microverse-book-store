@@ -1,18 +1,28 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { add } from '../redux/books/booksSlice';
+import { addBook } from '../redux/books/booksSlice';
 
 const Form = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [addedBooks, setAddedBooks] = useState([]);
   const dispatch = useDispatch();
-  const handleClickAddBtn = (e) => {
+
+  const handleClickAddBtn = async (e) => {
     e.preventDefault();
-    dispatch(add({ title, author }));
-    // reset form
+
+    const newItem = {
+      item_id: `item${Math.floor(Math.random() * 10000)}`,
+      title,
+      author,
+      category: 'Fiction',
+    };
+    await dispatch(addBook(newItem));
+    setAddedBooks([...addedBooks, newItem]);
     setTitle('');
     setAuthor('');
   };
+
   return (
     <div className="form-container">
       <h2>Add new book</h2>
@@ -21,9 +31,7 @@ const Form = () => {
           type="text"
           placeholder="Book title"
           value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="text"
@@ -31,7 +39,7 @@ const Form = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit" onClick={(e) => handleClickAddBtn(e)}>
+        <button type="submit" onClick={handleClickAddBtn}>
           Add Book
         </button>
       </form>
