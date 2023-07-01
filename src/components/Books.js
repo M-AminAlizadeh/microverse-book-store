@@ -17,7 +17,7 @@ const Books = () => {
   }
 
   return (
-    <div>
+    <div className='books-container'>
       {Object.entries(books).map(([key, bookItems]) => bookItems.map((book) => (
         <Book
           key={key}
