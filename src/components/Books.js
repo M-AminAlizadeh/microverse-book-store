@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import Book from "./Book";
-import { fetchBooks } from "../redux/books/booksSlice";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Book from './Book';
+import { fetchBooks } from '../redux/books/booksSlice';
 
 const Books = () => {
   const books = useSelector((state) => state.books.books);
@@ -17,10 +17,13 @@ const Books = () => {
   }
 
   const bookComponents = [];
-  for (const itemId in books) {
+
+  // Iterate over the keys of the books object using Object.keys()
+  Object.keys(books).forEach((itemId) => {
     const bookArray = books[itemId];
 
-    for (const book of bookArray) {
+    // Iterate over the bookArray using array iteration methods
+    bookArray.forEach((book) => {
       bookComponents.push(
         <Book
           key={book.item_id}
@@ -28,10 +31,11 @@ const Books = () => {
           title={book.title}
           author={book.author}
           category={book.category}
-        />
+        />,
       );
-    }
-  }
+    });
+  });
+
   return <div>{bookComponents}</div>;
 };
 
