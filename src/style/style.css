@@ -11,12 +11,16 @@
 
 /* Header */
 nav {
-  border: 1px solid green;
-  border-bottom: 2px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand-name {
@@ -36,5 +40,90 @@ nav {
   padding: 1rem;
 }
 /* Books */
+.books-container {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}
+
+.book-right-side {
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-category {
+  font-weight: bold;
+  color: #828282;
+}
+.book-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.book-author {
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.buttons-container a {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.book-middle-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
 
 /* Form */
+.form-container {
+  width: 80%;
+  margin: auto;
+}
+
+.form-container h2 {
+  color: #989898;
+  text-transform: uppercase;
+}
+
+.form-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-title-input,
+.book-author-input,
+.book-category-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+}

@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => (
   <nav>
-    <div>
+    <div className="left-side">
       <h1 className='brand-name'>Bookstore CMS</h1>
       <ul className='links-container'>
         <li>
@@ -18,7 +18,7 @@ const Navbar = () => (
         </li>
       </ul>
     </div>
-    
+    <img  src="https://img.icons8.com/ios-glyphs/40/person-male.png" alt="person-male"/>
   </nav>
 );
 
