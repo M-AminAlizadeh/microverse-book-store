@@ -55,7 +55,7 @@ export const removeBook = createAsyncThunk(
           "Content-Type": "application/json",
         },
       });
-      return { itemId: payload.itemId }; // Make sure the payload contains the 'itemId' property
+      return { itemId: payload.itemId }; 
     } catch (error) {
       return rejectWithValue(error.message);
     }

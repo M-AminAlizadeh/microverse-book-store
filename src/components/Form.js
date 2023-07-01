@@ -17,14 +17,8 @@ const Form = () => {
       author,
       category: "Fiction",
     };
-
-    // Dispatch the addBook action to update the Redux store
     await dispatch(addBook(newItem));
-
-    // Update the local state with the newly added book
     setAddedBooks([...addedBooks, newItem]);
-
-    // Reset form
     setTitle("");
     setAuthor("");
   };
